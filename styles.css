@@ -54,6 +54,25 @@ img {
 
 strong { font-weight: var(--fw-bold) }
 
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: var(--clr-light);
+}
+
+*::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: var(--clr-light);
+}
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(22, 133, 224, 0.75);
+}
+
 /* Typography */
 
 h1,
@@ -114,6 +133,11 @@ nav {
     color: var(--clr-light);
     text-decoration: none;
     font-weight: var(--fs-h3);
+    transition: 0.2s ease-in;
+}
+
+.logo a:hover {
+    color: var(--clr-accent);
 }
 
 .nav__item {
@@ -136,10 +160,11 @@ nav {
     color: var(--clr-light);
     text-decoration: none;
     letter-spacing: 3px;
+    transition: 0.2s ease-in;
 }
 
 .nav__list a:hover {
-    opacity: 0.5;
+    color: var(--clr-accent);
 }
 
 .burger {
@@ -194,11 +219,6 @@ nav {
     margin: 0 auto;
 }
 
-
-
-
-
-
 /* Projects */
 .my-projects {
     display: flex;
@@ -251,6 +271,8 @@ nav {
     border-radius: 1em;
     box-shadow: var(--bs);
     margin: 0 auto;
+    max-height: 80%;
+    overflow: auto;
 }
 
 .project-info h2 {
@@ -419,6 +441,12 @@ nav {
     }
 }
 
+@media (max-width:600px){
+    .my-projects {
+        padding: 1rem 0 1rem 0;
+    }
+}
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
@@ -446,6 +474,16 @@ nav {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+    }
+
+    .my-projects {
+        padding: 1rem;
+    }
+}
+
+@media(min-width:700px) {
+    .my-projects {
+        padding: 2rem;
     }
 }
 
@@ -510,6 +548,14 @@ nav {
 @media (min-width: 1000px){
     .nav__list {
         font-size: 1rem;
+    }
+
+    .about-me {
+        padding: 1rem 8em 1rem 8em;
+    }
+
+    .my-projects {
+        padding: 1rem 8em 1rem 8em;
     }
 }
 
