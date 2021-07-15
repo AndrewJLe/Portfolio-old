@@ -181,6 +181,11 @@ nav {
     transition: all 0.5s ease;
 }
 
+.burger:hover div {
+    background-color: var(--clr-accent);
+
+}
+
 /* Header */
 
 
@@ -333,6 +338,8 @@ nav {
     background: var(--clr-accent);
 }
 
+/* Project Stack */
+
 .project-stack {
     text-align: center;
 }
@@ -350,7 +357,30 @@ nav {
 
 .project-stack-list li{
     padding: 0 20px;
+}
+
+.project-stack-list li i {
+    cursor: pointer;
+}
+
+.project-stack-list li i:hover {
+    font-size: 110%;
+    color: blue;
     
+}
+
+/* Project Stack Icons */
+
+.project-stack-list #js-icon {
+    color: #3b3b3b;
+}
+
+.project-stack-list #html-icon {
+    color: #f06529;
+}
+
+.project-stack-list #css-icon {
+    color: #2965f1;
 }
 
 /* Project Buttons */
@@ -362,8 +392,9 @@ nav {
 }
 .project-display-btn {
     border-radius: 10px;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
+    opacity: .80;
+    background: var(--clr-dark);
+    color: var(--clr-light);
     padding: 1em 1em;
     box-shadow: var(--bs);
     padding: 1em 1em;
@@ -378,8 +409,7 @@ nav {
 }
 
 .project-display-btn:hover {
-    opacity: .85;
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     color: var(--clr-light);
     font-weight: 600;
 }
