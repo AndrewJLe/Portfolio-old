@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Titillium Web Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d5ac893f7b.js" crossorigin="anonymous"></script>
+    <title>Andrew's Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <!-- <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button> -->
+        <nav class="nav">
+            <div class="logo">
+                <a href="#home">&ltajl&gt</a>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item"> <a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"> <a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"> <a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"> <a href="#skills" class="nav__link">My Skills</a></li>
+                <li class="nav__item"> <a href="#footer" class="nav__link">Contact</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="burger-line-1"></div>
+                <div class="burger-line-2"></div>
+                <div class="burger-line-3"></div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I'm <strong>Andrew Le</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Software Engineer</p>
+        <img src="img/sleepy-cat-1.jpg" alt="profile picture" class="intro__img">
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About Me</h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+
+        <div class="about-me__body">
+            <p> I'm a senior studying Computer Science at Washington State University.
+                I live in Seattle, Washington.
+                On my free time I'm either cooking new recipes, playing video games, or making things.
+                I love solving problems and am always excited to learn new things.
+            </p>
+        </div>
+    </section>
+
+    <!-- My Projects -->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title section__title--projects">Projects</h2>
+
+        <!-- Project Slider -->
+        <div class="project__slider">
+            <!-- Project 1 Start -->
+            <div class="project active">
+                <img src="img/boids-project.jpeg" alt="">
+                <div class="project-info">
+                    <h2>Boids</h2>
+                    <p> Boids is an artificial life program that simulates the behaviour of birds, fish, and swarms.
+                        The boids follow a set of rules that demonstrate complex emergence behaviour when interacting
+                        with other boids within their field of view.
+                        This project was created entirely from scratch, meaning that we created our own Vector and
+                        Utility libraries
+                        in order to perform all the physics, vector operations, and trigonometry needed to simulate the
+                        boid movement.
+                    </p>
+                    <div class="project-stack">
+                        <ul class="project-stack-list">
+                            <li>
+                                <i class="fab fa-js-square" style="color:#3b3b3b"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-html5" style="color:#f06529 "></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-css3-alt" style="color:#2965f1"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-display">
+                        <a href="https://github.com/AndrewJLe/BoidProject" class="project-display-btn"
+                            target="_blank">View Code</a>
+                        <a href="https://andrewjle.github.io/BoidProject/" class="project-display-btn"
+                            target="_blank">Live
+                            Preview</a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Project 1 End -->
+
+            <!-- Project 2 Start -->
+            <div class="project">
+                <img src="img/sleepy-cat-1.jpg" alt="">
+                <div class="project-info">
+                    <h2>Project 2 Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <!-- Project 2 End -->
+
+            <!-- Navigation Start -->
+            <div class="project-navigation">
+                <i class="fa fa-chevron-left prev-btn"></i>
+                <i class="fa fa-chevron-right next-btn"></i>
+            </div>
+            <!-- Navigation End -->
+
+            <!-- Visibility Start -->
+            <div class="project-navigation-visibility">
+                <div class="project-slide-icon active"></div>
+                <div class="project-slide-icon"></div>
+            </div>
+            <!-- Visibility End -->
+
+        </div>
+        <!-- Project Slider End -->
+    </section>
+
+
+
+    <!-- My Skills -->
+    <section class="my-skills" id="skills">
+
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer" id="footer">
+        <a href="mailto:andrewjacksonle@gmail.com" class="footer__link">andrewjacksonle@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/andrewjle">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/andrewjle/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
