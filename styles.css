@@ -28,7 +28,6 @@ html {
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25),
           0.125em 0.125em 0.25em rgba(0,0,0,0.15);
-
 }
 
 /* General Styles */
@@ -233,6 +232,10 @@ nav {
     background: var(--clr-light);
 }
 
+.my-projects h2 {
+    font-size: 3rem;
+}
+
 /* Project Slider */
 
 .project__slider {
@@ -265,7 +268,7 @@ nav {
 
 .project.active {
     clip-path: circle(150.0% at 100% 50%);
-    transition: 0.75s;
+    transition: 1.25s;
 }
 
 .project-info {
@@ -312,11 +315,21 @@ nav {
 .prev-btn {
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
+    transition: 0.25s;
+}
+
+.prev-btn:hover {
+    color: var(--clr-accent);
 }
 
 .next-btn {
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
+    transition: 0.5s;
+}
+
+.next-btn:hover {
+    color: var(--clr-accent);
 }
 
 .project-navigation-visibility {
@@ -332,6 +345,7 @@ nav {
     transform: translateY(-20px);
     margin: 0 5px;
     box-shadow: var(--bs);
+    border: 1px solid rgb(170, 170, 170);
 }
 
 .project-slide-icon.active {
@@ -431,11 +445,12 @@ nav {
 
 .footer__link {
     font-weight: 500;
+    transition: 0.25s;
 }
 
 .footer__link:hover,
 .social-list__link:hover {
-    opacity: 0.5;
+    color: var(--clr-accent);
 }
 
 .footer__link:hover {
