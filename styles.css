@@ -273,7 +273,7 @@ nav {
 
 .project-info {
     position: absolute;
-    background: rgba(182, 182, 182, 0.55);
+    background: rgba(235, 235, 235, 0.55);
     width: 75%;
     padding: 3em;
     border-radius: 1em;
@@ -379,21 +379,19 @@ nav {
 
 .project-stack-list li i:hover {
     font-size: 110%;
-    color: blue;
-    
 }
 
 /* Project Stack Icons */
 
-.project-stack-list #js-icon {
+.fa-js-square {
     color: #3b3b3b;
 }
 
-.project-stack-list #html-icon {
+.fa-html5 {
     color: #f06529;
 }
 
-.project-stack-list #css-icon {
+.fa-css3-alt {
     color: #2965f1;
 }
 
@@ -426,6 +424,11 @@ nav {
     background: var(--clr-accent);
     color: var(--clr-light);
     font-weight: 600;
+}
+
+/* Misc Project Styling */
+#yelp-bg-id {
+    opacity: 0.2;
 }
 
 /* Footer */

@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
     <script src="https://kit.fontawesome.com/d5ac893f7b.js" crossorigin="anonymous"></script>
     <title>Andrew's Portfolio</title>
 </head>
@@ -76,7 +77,7 @@
         <div class="project__slider">
             <!-- Project 1 Start -->
             <div class="project active">
-                <img src="img/BoidsPreview.gif" alt="">
+                <img src="img/BoidsPreview.gif" alt="Boids Gif Project Info Background">
                 <div class="project-info">
                     <h2>Boids</h2>
                     <p> Boids is an artificial life program that simulates the behaviour of birds, fish, and swarms.
@@ -123,9 +124,55 @@
 
             <!-- Project 2 Start -->
             <div class="project">
+                <img src="img/Project-2-YelpApp/Project-2-YelpDataset-BG.png" alt="Yelp Dataset Project Info Background"
+                    id="yelp-bg-id">
+                <div class="project-info">
+                    <h2>Yelp Data Search Appication</h2>
+                    <p>
+                        The Yelp Data Search Application allows users to query a large dataset and extract information
+                        about local businesses and individual users.
+                        The dataset used in this project contains 20,000 businesses, 190,000 users, 290,000 tips, and
+                        3.8 million check-ins to those businesses.
+                        I parsed the dataset (JSON) using Python, designed an Entity-Relationship model and
+                        translated it into a Relational schema.
+                        I wrote Python scripts to populate our database and wrote complex queries for our standalone
+                        application's search functions using SQL and C#.
+                    </p>
+                    <div class="project-stack">
+                        <h3>Stack</h3>
+                        <ul class="project-stack-list">
+                            <li>
+
+                                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">
+                                    <i class="devicon-csharp-plain-wordmark colored"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.python.org/" target="_blank">
+                                    <i class="devicon-python-plain-wordmark colored"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.postgresql.org/" target="_blank">
+                                    <i class="devicon-postgresql-plain-wordmark colored"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project-display">
+                        <a href="https://github.com/AndrewJLe/Yelp-Data-Search-Application" class="project-display-btn"
+                            target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 End -->
+
+            <!-- Project 3 Start -->
+            <div class="project">
                 <img src="img/sleepy-cat-1.jpg" alt="">
                 <div class="project-info">
-                    <h2>Project 2 Title</h2>
+                    <h2>Project 3 Title</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -136,7 +183,7 @@
                     </p>
                 </div>
             </div>
-            <!-- Project 2 End -->
+            <!-- Project 3 End -->
 
             <!-- Navigation Start -->
             <div class="project-navigation">
@@ -148,6 +195,7 @@
             <!-- Visibility Start -->
             <div class="project-navigation-visibility">
                 <div class="project-slide-icon active"></div>
+                <div class="project-slide-icon"></div>
                 <div class="project-slide-icon"></div>
             </div>
             <!-- Visibility End -->
