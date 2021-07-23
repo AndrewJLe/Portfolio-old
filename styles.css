@@ -431,7 +431,7 @@ nav {
 .resume-open-modal h2 {
     text-decoration: none;
     color: white;
-    transition: 0.25s ease-in;
+    transition: 0.15s ease-in;
 }
 
 .resume-open-modal h2:hover {
@@ -441,7 +441,7 @@ nav {
 
 .resume-modal-container {
     display: none;
-    background-color: rgba(55, 55, 55, 0.9);
+    background-color: rgba(25, 25, 25, 0.95);
     position: fixed;
     top: 0;
     left: 0;
@@ -476,22 +476,43 @@ nav {
 }
 
 .resume-close-modal {
-    color: var(--clr-light);
     position: fixed;
-    border: none;
-    padding: 0.5rem;
-    outline: none;
-    right: 25px;
-    top: 15px;
-    font-weight: 600;
-    font-size: 2.5rem;
-    margin: -1rem -1rem 0 0;
+    display: block;
+    margin-left: auto;
+    padding: 0.2em;
+    color: var(--clr-light);
+    top: 0;
+    right: 0;
+    transition: 0.25s ease-in;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.resume-close-modal div{
+    border-radius: 3px;
+    width: 25px;
+    height: 4px;
+    background-color: var(--clr-light);
+    margin: 5px;
     transition: 0.25s ease-in;
 }
 
-.resume-close-modal:hover {
-    color: var(--clr-accent);
-    cursor: pointer;
+.resume-close-modal:hover div {
+    background-color: var(--clr-accent);
+}
+
+.x-line-1 {
+    transform:rotate(45deg) translateX(10px);
+    -webkit-transform:rotate(45deg) translateX(10px);
+    transform-origin:30%;
+    -webkit-transform-origin:30%;
+}
+
+.x-line-2 {
+    transform:rotate(-45deg) translateY(10px);
+    -webkit-transform:rotate(-45deg) translateY(10px);
+    transform-origin:20%;
+    -webkit-transform-origin:20%;
 }
 
 /* Footer */
