@@ -33,8 +33,8 @@
                 <li class="nav__item"> <a href="#home" class="nav__link">Home</a></li>
                 <li class="nav__item"> <a href="#about" class="nav__link">About Me</a></li>
                 <li class="nav__item"> <a href="#projects" class="nav__link">Projects</a></li>
-                <li class="nav__item"> <a href="#skills" class="nav__link">My Skills</a></li>
-                <li class="nav__item"> <a href="#footer" class="nav__link">Contact</a></li>
+                <li class="nav__item"> <a href="#resume" class="nav__link">Resume</a></li>
+                <li class="nav__item"> <a href="#contact" class="nav__link">Contact</a></li>
             </ul>
 
             <div class="burger">
@@ -62,8 +62,7 @@
 
         <div class="about-me__body">
             <p> I'm a senior studying Computer Science at Washington State University.
-                I live in Seattle, Washington.
-                On my free time I'm either cooking new recipes, playing video games, or making things.
+                On my free time I'm either cooking, playing video games, or building applications.
                 I love solving problems and am always excited to learn new things.
             </p>
         </div>
@@ -79,7 +78,7 @@
             <div class="project active">
                 <img src="img/BoidsPreview.gif" alt="Boids Gif Project Info Background">
                 <div class="project-info">
-                    <h2>Boids</h2>
+                    <h3>Boids</h3>
                     <p> Boids is an artificial life program that simulates the behaviour of birds, fish, and swarms.
                         The boids follow a set of rules that demonstrate complex emergence behaviour when interacting
                         with other boids within their field of view.
@@ -89,7 +88,7 @@
                         boid movement.
                     </p>
                     <div class="project-stack">
-                        <h3>Stack</h3>
+                        <h4>Stack</h4>
                         <ul class="project-stack-list">
                             <li>
 
@@ -127,7 +126,7 @@
                 <img src="img/Project-2-YelpApp/Project-2-YelpDataset-BG.png" alt="Yelp Dataset Project Info Background"
                     id="yelp-bg-id">
                 <div class="project-info">
-                    <h2>Yelp Data Search Appication</h2>
+                    <h3>Yelp Data Search Appication</h3>
                     <p>
                         The Yelp Data Search Application allows users to query a large dataset and extract information
                         about local businesses and individual users.
@@ -139,7 +138,7 @@
                         application's search functions using SQL and C#.
                     </p>
                     <div class="project-stack">
-                        <h3>Stack</h3>
+                        <h4>Stack</h4>
                         <ul class="project-stack-list">
                             <li>
 
@@ -172,7 +171,7 @@
             <div class="project">
                 <img src="img/sleepy-cat-1.jpg" alt="">
                 <div class="project-info">
-                    <h2>Project 3 Title</h2>
+                    <h3>Project 3 Title</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -206,13 +205,24 @@
 
 
 
-    <!-- My Skills -->
-    <section class="my-skills" id="skills">
-
+    <!-- My Resume -->
+    <section class="resume" id="resume">
+        <div class="resume-open-modal">
+            <h2>View My Resume</h2>
+        </div>
+        <section class="resume-modal-container">
+            <section class="resume-modal-content">
+                <div class="resume-close-modal">X</div>
+                <div class="resume-download"><a href="/resume/AndrewLeResume.pdf" download="Andrew-Le-Resume"><i
+                            class="fas fa-download"></i></a>
+                </div>
+                <img src="/resume/AndrewLeResume-1.jpg" alt="Andrew Le's resume">
+            </section>
+        </section>
     </section>
 
     <!-- Footer-->
-    <footer class="footer" id="footer">
+    <footer class="footer" id="contact">
         <a href="mailto:andrewjacksonle@gmail.com" class="footer__link">andrewjacksonle@gmail.com</a>
         <ul class="social-list">
             <li class="social-list__item">
@@ -225,10 +235,8 @@
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
-
         </ul>
     </footer>
-
 </body>
 
 <script src="app.js"></script>

@@ -69,6 +69,18 @@ function hamburgerNavigation() {
     });
 }
 
+function resumeModal() {
+    const openModal = document.querySelector(".resume-open-modal");
+    const closeModal = document.querySelector(".resume-close-modal");
+    const modal = document.querySelector(".resume-modal-container");
+    openModal.onclick = function () {
+        modal.style.display = "block";
+    }
+    closeModal.onclick = function () {
+        modal.style.display = "none";
+    }
+}
+
 function init() {
 
     // Prevent animations on resize
@@ -83,6 +95,7 @@ function init() {
 
     projectNavigation();
     hamburgerNavigation();
+    resumeModal();
 }
 
 init();
