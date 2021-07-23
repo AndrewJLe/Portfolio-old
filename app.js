@@ -70,7 +70,7 @@ function hamburgerNavigation() {
 }
 
 function resumeModal() {
-    const openModal = document.querySelector(".resume-open-modal");
+    const openModal = document.querySelector(".resume-open-modal h2");
     const closeModal = document.querySelector(".resume-close-modal");
     const modal = document.querySelector(".resume-modal-container");
     openModal.onclick = function () {
