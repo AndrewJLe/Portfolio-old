@@ -496,7 +496,6 @@ nav {
     width: 90%;
     height: 100%;
     margin: 0 auto;
-    overflow: auto;
 }
 
 .resume-close-modal {
@@ -537,6 +536,11 @@ nav {
     -webkit-transform:rotate(-45deg) translateY(10px);
     transform-origin:20%;
     -webkit-transform-origin:20%;
+}
+
+.resume-embed {
+    width: 100%;
+    height: 100%;
 }
 
 /* Footer */
