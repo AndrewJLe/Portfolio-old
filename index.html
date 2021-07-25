@@ -213,11 +213,12 @@
         <!-- Contact Form -->
         <div class="contact-container">
             <h2>Contact Me</h2>
-            <form id="form" class="contact-form">
-                <input class="contact-name" type="text" placeholder="NAME">
-                <input class="contact-email" type="text" placeholder="E-MAIL">
-                <textarea class="contact-message" type="text" placeholder="MESSAGE"></textarea>
+            <form id="form" class="contact-form" action="https://formsubmit.co/andrewjacksonle@gmail.com" method="POST">
+                <input class="contact-name" type="text" name="name" placeholder="NAME" required>
+                <input class="contact-email" type="text" name="email" placeholder="E-MAIL" required>
+                <textarea class="contact-message" type="text" placeholder="MESSAGE" required></textarea>
                 <input class="contact-submit" type="submit" value="Send">
+                <input type="hidden" name="_next" value="https://andrewjle.github.io/Portfolio/#home">
 
             </form>
         </div>

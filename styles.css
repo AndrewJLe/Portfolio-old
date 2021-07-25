@@ -441,7 +441,6 @@ nav {
     text-decoration: none;
     color: white;
     transition: 0.15s ease-in;
-    width: fit-content;
 }
 
 .resume-open-modal h2:hover {
